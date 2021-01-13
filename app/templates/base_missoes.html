@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>VOOHP - Home</title>
+    <title>Missões - VOOHP</title>
 
     <!-- Custom fonts for this template-->
     
@@ -150,35 +150,55 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <img src="{{url_for('static', filename = 'sistema_jerry_img/logovoohp.jpeg')}}" class="img-fluid  max-width: 100%;  height: auto;" alt="BANNER">
+                    <img src="{{url_for('static', filename = 'sistema_jerry_img/V_Logomark_red.png')}}" class="img-fluid" alt="BANNER">
 
                     
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-3 mt-5" style="color: #0d122b;">
-                        <h1 class="h3 mb-0 " >Todas as missões:</h1>
+                        <h1 class="h3 mb-0" style="font-weight: 600;" >Todas as missões:</h1>
                     </div>
 
                     <!-- Content Row -->
                     <div class="row">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Missão</th>
+                                <th scope="col">Informações</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Missão louca</td>
+                                <td><button type="button" style="font-weight: 900; background: #d14841; color: #000;" class="btn btn-sm"> + </button></td>
+                               
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Missão do jacaré</td>
+                                <td><button type="button" style="font-weight: 900; background: #d14841; color: #000;" class="btn btn-sm"> + </button></td>
+                                
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td >Missão secreta shhh</td>
+                                <td><button type="button" style="font-weight: 900; background: #d14841; color: #000;" class="btn btn-sm"> + </button></td>
+                               </tr>
+                            </tbody>
+                        </table>
 
-                        
-                        
-
-                        <button type="button" class="btn btn-lg btn-block" style="background: #d14841; color: #0d122b;" >Adicionar nova missão</button>
+                        <button type="button" class="btn btn-lg btn-block" style="background: #d14841; color: #000000;">Adicionar nova missão</button>
                         
                     </div>                    
-                    <div class="d-sm-flex align-items-center justify-content-between mb-3 mt-5" style="color: #0d122b;">
-                        <h1 class="h3 mb-0 " >Ranking de Funcionários:</h1>
-                    </div>
-                    <!-- Content Row -->
-
                     
-
                     <!-- Content Row -->
                     <div class="row">
-
+                        
                         <!-- Content Column -->
-                        <div class="col-lg-6 mb-4">
+                        <div class="col-lg-6 mb-4"></div>
 
                             
 
@@ -203,7 +223,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
+            <footer class="sticky-footer shadow" style="background: #ffffff; color: #0d122b;">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <span>Origin &copy; 2020 - <i>tecnologie-se</i></span>
