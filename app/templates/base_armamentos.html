@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>VOOHP - Home</title>
+    <title>Armamento - VOOHP</title>
 
     <!-- Custom fonts for this template-->
     
@@ -57,8 +57,8 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="{{url_for('funcionario.funcionarios')}}" >
+            <li class="nav-item ">
+                <a class="nav-link" href="{{url_for('funcionario.funcionarios')}}" >
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Funcionários</span>
                 </a>
@@ -66,8 +66,8 @@
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="{{url_for('missao.missoes')}}"
+            <li class="nav-item ">
+                <a class="nav-link" href="{{url_for('missao.missoes')}}"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Missões</span>
@@ -76,7 +76,7 @@
             </li>
 
             <li class="nav-item active">
-                <a class="nav-link collapsed" href="{{url_for('armamento.armamentos')}}" 
+                <a class="nav-link" href="{{url_for('armamento.armamentos')}}" 
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Armamento</span>
@@ -85,7 +85,7 @@
             </li>
 
             <!-- Divider -->
-            <hr class="sidebar-divider">
+            
 
             <!-- Heading -->
             
@@ -127,6 +127,7 @@
 
                     <!-- Topbar Search -->
                     <h2>Valorant organization of human protection</h2>
+                    
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto ">
 
@@ -149,115 +150,89 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <img src="{{url_for('static', filename = 'sistema_jerry_img/V_Logomark_red.png')}}" class="img-fluid  max-width: 50%;  height: auto;" alt="BANNER">
+                    <img src="{{url_for('static', filename = 'sistema_jerry_img/V_Logomark_Red.png')}}" class="img-fluid" alt="BANNER">
+
                     
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-3 mt-5" style="color: #0d122b;">
-                        <h1 class="h3 mb-0 " >Missões em andamento:</h1>
+                        <h1 class="h3 mb-0" style="font-weight: 600;" >Arsenal completo:</h1>
                     </div>
 
                     <!-- Content Row -->
                     <div class="row">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Arma</th>
+                                <th scope="col">Informações</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>AK-47</td>
+                                <td><button type="button" style="font-weight: 900; background: #d14841; color: #000;" class="btn btn-sm"> + </button></td>
+                               
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>MP5</td>
+                                <td><button type="button" style="font-weight: 900; background: #d14841; color: #000;" class="btn btn-sm"> + </button></td>
+                                
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td >Glock</td>
+                                <td><button type="button" style="font-weight: 900; background: #d14841; color: #000;" class="btn btn-sm"> + </button></td>
+                               </tr>
+                            </tbody>
+                        </table>
 
-                        <div class="col-xl-3 col-md-6 mb-4" >
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                missão 1</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">descrição</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                missão 2</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">descrição</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                missão 3</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">descrição</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                missão 4</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">descrição</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                missão 5</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">descrição</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        <button type="button" class="btn btn-lg btn-block mb-5" style="background: #d14841; color: #000000; font-weight: 500;">Adicionar nova arma</button>
                         
                     </div>                    
-                    <div class="d-sm-flex align-items-center justify-content-between mb-3 mt-5" style="color: #0d122b;">
-                        <h1 class="h3 mb-0 " >Ranking de Funcionários:</h1>
-                    </div>
-                    <!-- Content Row -->
-
                     
-
                     <!-- Content Row -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-3 mt-5" style="color: #0d122b;">
+                        <h1 class="h3 mb-0 mt-5" style="font-weight: 600;" >Armas auxiliares:</h1>
+                    </div>
                     <div class="row">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Auxiliar</th>
+                                <th scope="col">Informações</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Bomba</td>
+                                <td><button type="button" style="font-weight: 900; background: #d14841; color: #000;" class="btn btn-sm"> + </button></td>
+                               
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Granada</td>
+                                <td><button type="button" style="font-weight: 900; background: #d14841; color: #000;" class="btn btn-sm"> + </button></td>
+                                
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td >C4</td>
+                                <td><button type="button" style="font-weight: 900; background: #d14841; color: #000;" class="btn btn-sm"> + </button></td>
+                               </tr>
+                            </tbody>
+                        </table>
 
+                        <button type="button" class="btn btn-lg btn-block" style="background: #d14841; color: #000000; font-weight: 500;">Adicionar novo auxiliar</button>
+                        
                         <!-- Content Column -->
-                        <div class="col-lg-6 mb-4">
+                        <div class="col-lg-6 mb-4"></div>
 
                             
 
