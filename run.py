@@ -1,5 +1,5 @@
-from app import maneger
+from app import app
 
 if __name__ ==  "__main__":
-    maneger.run()
+    app.run(debug=True)
     

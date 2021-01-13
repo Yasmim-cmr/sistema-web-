@@ -4,7 +4,7 @@ class Armamento(db.Model):
     __tablename__ = "armamento"
     
     id                  = db.Column(db.Integer, primary_key=True)
-    nome                = db.Column(db.String(100), nullable=False)
+    nome_arma           = db.Column(db.String(100), nullable=False)
     tipo                = db.Column(db.String(20))
     valor               = db.Column(db.String(11))
     cartucho            = db.Column(db.String(15))

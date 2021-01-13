@@ -14,7 +14,7 @@ class Funcionario(db.Model):
     endereço            = db.Column(db.String(70))
     habilidades         = db.Column(db.String(60))
     celular             = db.Column(db.String(12))
-    emai                = db.Column(db.String(25))
+    email               = db.Column(db.String(25))
     salario             = db.Column(db.String(20))
     
     missoes_presente    = db.Column(db.String(20))
