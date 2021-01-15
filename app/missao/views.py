@@ -6,8 +6,8 @@ from app.missao.models import Missao
 
 missao = Blueprint('missao', __name__, template_folder='templates')
 
-@missao.route("/missoes")
-def missoes():
+@missao.route("/")
+def index():
     return render_template('base_missoes.html')
 
 @missao.route('/cadastrar_missao', methods=['GET','POST'])
@@ -21,7 +21,8 @@ def cadastrar_missao():
         arsenal                 = request.form['arsenal']
         agentes_responsaveis    = request.form['']
 
-        missao = Missao(data = data,
+        missao = Missao(nome_missao = nome_missao,
+                        data = data,
                         local = local,
                         cliente = cliente,
                         status = status,
@@ -30,5 +31,7 @@ def cadastrar_missao():
         db.session.add(missao)
         db.session.commit()
         
-        return redirect(url_for('missao/missoes'))
+        return redirect(url_for('missao.index'))
     return render_template('form_missoes.html')
+
+

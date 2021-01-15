@@ -8,9 +8,10 @@ from app.funcionario.models import Funcionario
 
 funcionario = Blueprint('funcionario', __name__, template_folder='templates')
 
-@funcionario.route("/funcionarios")
-def funcionarios():
-    return render_template('base_funcionarios.html')
+@funcionario.route("/")
+def index():
+    funcionarios = Funcionario.query.all()
+    return render_template('base_funcionarios.html', funcionarios_front  = funcionarios)
 
 @funcionario.route('/cadastrar_funcionario', methods=['GET','POST'])
 def cadastrar_funcionario():
@@ -46,5 +47,16 @@ def cadastrar_funcionario():
         db.session.add(funcionario)
         db.session.commit()
 
-        return redirect(url_for('funcionario.funcionarios'))            
+        return redirect(url_for('funcionario.index'))            
     return render_template('form_funcionarios.html')
+
+@funcionario.route('/perfil/<_id>', methods=['GET'])
+def perfil(_id):
+    funcionario = Funcionario.query.get_or_404(_id)
+
+    return render_template('info_funcionarios.html', funcionario = funcionario)
+
+
+
+
+    

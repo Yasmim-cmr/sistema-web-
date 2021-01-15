@@ -60,7 +60,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="{{url_for('funcionario.funcionarios')}}" >
+                <a class="nav-link" href="{{url_for('funcionario.index')}}" >
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Funcionários</span>
                 </a>
@@ -69,7 +69,7 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="{{url_for('missao.missoes')}}"
+                <a class="nav-link" href="{{url_for('missao.index')}}"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Missões</span>
@@ -78,7 +78,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="{{url_for('armamento.armamentos')}}" 
+                <a class="nav-link" href="{{url_for('armamento.index')}}" 
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Armamento</span>
@@ -166,29 +166,60 @@
                         <table class="table">
                             <thead>
                               <tr>
-                                <th scope="col">#</th>
+                                <th scope="col">ID</th>
                                 <th scope="col">Missão</th>
-                                <th scope="col">Informações</th>
+                                <th scope="col">Opções</th>
                                 
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
                                 <th scope="row">1</th>
-                                <td>Missão louca</td>
-                                <td><button type="button" style="font-weight: 900; background: #d14841; color: #000;" class="btn btn-sm"> + </button></td>
+                                <td>Missão exemplo</td>
+                                <td><div class="btn-group" role="group" aria-label="Basic example">
+                                    <button style="background-color: #0d122b; color: #ffffff;" type="button" class="btn">Ver mais</button>
+                                    <button style="background-color: #0d122b; color: #ffffff;" type="button" class="btn">Excluir</button>
+                                    <button style="background-color: #0d122b; color: #ffffff;" type="button" class="btn">Editar</button>
+                                  </div></td>
                                
                               </tr>
                               <tr>
                                 <th scope="row">2</th>
                                 <td>Missão do jacaré</td>
-                                <td><button type="button" style="font-weight: 900; background: #d14841; color: #000;" class="btn btn-sm"> + </button></td>
+                                <td><div class="btn-group" role="group" aria-label="Basic example">
+                                    <button style="background-color: #0d122b; color: #ffffff;" type="button" class="btn">Ver mais</button>
+                                    <button style="background-color: #0d122b; color: #ffffff;" type="button" class="btn">Excluir</button>
+                                    <button style="background-color: #0d122b; color: #ffffff;" type="button" class="btn">Editar</button>
+                                  </div></td>
                                 
                               </tr>
                               <tr>
                                 <th scope="row">3</th>
-                                <td >Missão secreta shhh</td>
-                                <td><button type="button" style="font-weight: 900; background: #d14841; color: #000;" class="btn btn-sm"> + </button></td>
+                                <td>Missão secreta shhh</td>
+                                <td><div class="btn-group" role="group" aria-label="Basic example">
+                                    <button style="background-color: #0d122b; color: #ffffff;" type="button" class="btn">Ver mais</button>
+                                    <button style="background-color: #0d122b; color: #ffffff;" type="button" class="btn">Excluir</button>
+                                    <button style="background-color: #0d122b; color: #ffffff;" type="button" class="btn">Editar</button>
+                                  </div></td>
+                               </tr>
+                               <tr>
+                                <th scope="row">4</th>
+                                <td>Missão com refém</td>
+                                <td><div class="btn-group" role="group" aria-label="Basic example">
+                                    <button style="background-color: #0d122b; color: #ffffff;" type="button" class="btn">Ver mais</button>
+                                    <button style="background-color: #0d122b; color: #ffffff;" type="button" class="btn">Excluir</button>
+                                    <button style="background-color: #0d122b; color: #ffffff;" type="button" class="btn">Editar</button>
+                                  </div></td>
+                                
+                              </tr>
+                              <tr>
+                                <th scope="row">5</th>
+                                <td>Missão resgate</td>
+                                <td><div class="btn-group" role="group" aria-label="Basic example">
+                                    <button style="background-color: #0d122b; color: #ffffff;" type="button" class="btn">Ver mais</button>
+                                    <button style="background-color: #0d122b; color: #ffffff;" type="button" class="btn">Excluir</button>
+                                    <button style="background-color: #0d122b; color: #ffffff;" type="button" class="btn">Editar</button>
+                                  </div></td>
                                </tr>
                             </tbody>
                         </table>
@@ -207,8 +238,8 @@
                         <table class="table">
                             <thead>
                               <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">funcionário</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">Funcionário</th>
                             <th scope="col">Missões concluídas:</th>
                                 
                               </tr>
@@ -216,21 +247,33 @@
                             <tbody>
                               <tr>
                                 <th scope="row">1</th>
-                                <td>Yasmim a guerreira</td>
-                                <td>0</td>
+                                <td>Yasmim</td>
+                                <td>19</td>
                                
                               </tr>
                               <tr>
                                 <th scope="row">2</th>
-                                <td>fernanda a feiticeira</td>
-                                <td>sim</td>
+                                <td>fernanda</td>
+                                <td>16</td>
                                 
                               </tr>
                               <tr>
                                 <th scope="row">3</th>
-                                <td >joão!!! :o</td>
-                                <td>joão</td>
+                                <td >João</td>
+                                <td>12</td>
                                </tr>
+                               <tr>
+                                <th scope="row">4</th>
+                                <td>Bob</td>
+                                <td>11</td>
+                               
+                              </tr>
+                              <tr>
+                                <th scope="row">5</th>
+                                <td>Patrick</td>
+                                <td>9</td>
+                              </tr>
+                              
                             </tbody>
                         </table>
                        

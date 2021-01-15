@@ -8,8 +8,8 @@ from app.armamento.models import Armamento
 
 armamento = Blueprint('armamento', __name__, template_folder='templates')
 
-@armamento.route("/armamentos")
-def armamentos():
+@armamento.route("/")
+def index():
     return render_template('base_armamentos.html')
 
 @armamento.route('/cadastrar_arma',  methods=['GET','POST'])
@@ -32,5 +32,5 @@ def cadastrar_arma():
         db.session.add(armamento)
         db.session.commit()
 
-        return redirect(url_for('armamento.armamentos'))
+        return redirect(url_for('armamento.index'))
     return render_template('form_armamentos.html')

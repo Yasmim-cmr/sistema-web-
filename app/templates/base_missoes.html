@@ -58,7 +58,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{url_for('funcionario.funcionarios')}}" >
+                <a class="nav-link collapsed" href="{{url_for('funcionario.index')}}" >
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Funcionários</span>
                 </a>
@@ -67,7 +67,7 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item active">
-                <a class="nav-link collapsed" href="{{url_for('missao.missoes')}}"
+                <a class="nav-link collapsed" href="{{url_for('missao.index')}}"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Missões</span>
@@ -76,7 +76,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{url_for('armamento.armamentos')}}" 
+                <a class="nav-link collapsed" href="{{url_for('armamento.index')}}" 
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Armamento</span>
@@ -190,7 +190,7 @@
                             </tbody>
                         </table>
 
-                        <a href="url_for('missao.cadastrar_missao')" class="btn btn-lg btn-block" style="background: #d14841; color: #000000;" >Adicionar nova missão</a>
+                        <a href="{{url_for('missao.cadastrar_missao')}}" class="btn btn-lg btn-block" style="background: #d14841; color: #000000;" >Adicionar nova missão</a>
                         
                     </div>                    
                     
